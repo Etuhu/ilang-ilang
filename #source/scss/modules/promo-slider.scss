@@ -1,0 +1,28 @@
+.promo-slider {
+	.swiper-slide {
+		position: relative;
+		.caption {
+			position: absolute;
+			z-index: 110;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 400px;
+			.basic-title {
+				font-size: 3.2rem;
+				margin-bottom: 2.5rem;
+			}
+			p {
+				margin-bottom: 2.5rem;
+			}
+		}
+	}
+	.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+		width: 24px;
+		height: 24px;
+		background-color: $main-font-color;
+		margin: 0 8px;
+	}
+    .swiper-horizontal>.swiper-pagination-bullets {
+        bottom: 50px;
+    }
+}

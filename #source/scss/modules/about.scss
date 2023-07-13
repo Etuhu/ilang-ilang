@@ -1,0 +1,35 @@
+.about--index {
+    padding-top: 6.5rem;
+    .about-content {
+        position: relative;
+        margin-top: 4rem;
+        min-height: 1000px;
+    }
+    .about-image-row {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        .about-image {
+            img {
+                width: 550px;
+            }
+        }
+    }
+    .about-description {
+        > p:first-child {
+            background-color: $yellow;
+            font-size: 1.75rem;
+            font-weight: 500;
+            padding: 60px 60px 60px 500px;
+            margin-top: -35px;
+        }
+        > p {
+            padding-left: 500px;
+            padding-right: 60px;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}

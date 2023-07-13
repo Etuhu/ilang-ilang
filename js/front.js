@@ -11,9 +11,9 @@ const promoSwiper = new Swiper(".promo-swiper", {
     slidesPerGroup: 1,
     speed: 1000,
     simulateTouch: false,
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
     spaceBetween: 0,
     watchOverflow: true,
     navigation: {
@@ -32,7 +32,7 @@ let indexSliderParams = {
 	slidesPerView: 2.7,
 	slidesPerGroup: 1,
 	speed: 500,
-	grabCursor: true,
+	grabCursor: false,
 	simulateTouch: true,
 	spaceBetween: 60,
     slidesOffsetBefore: 900,
@@ -68,9 +68,9 @@ let indexSliderParams = {
 		  spaceBetween: 20
 		},
 		1600: {
-		  slidesPerView: 4,
+		  slidesPerView: 4.2,
 		  slidesPerGroup: 1,
-		  spaceBetween: 30,
+		  spaceBetween: 60,
 		}
 	}
 };

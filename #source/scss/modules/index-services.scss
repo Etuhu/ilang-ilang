@@ -1,0 +1,103 @@
+.index-services {
+    padding-bottom: 100px;
+    .title-wrapper {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.services-tabs {
+    .nav-item {
+        margin-bottom: 35px;
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+        .nav-link {
+            font-size: 1.35rem;
+            font-weight: 600;
+            background-color: $yellow;
+            color: $main-font-color;
+            border-radius: 45px;
+            padding: 15px 44px;
+            transition: 0.2s ease;
+            &:hover {
+                background-color: rgba(243, 224, 127, 0.7);
+                transition: 0.2s ease;
+            }
+            &.active {
+                background-color: $violet;
+                transition: 0.2s ease;
+                &:hover {
+                    background-color: $violet;
+                    transition: 0.2s ease;
+                }
+            }
+        }
+    }
+}
+
+.services-list-wrapper {
+    position: relative;
+    .collapse-button-wrapper {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            height: 4px;
+            width: 100%;
+            background-color: $green;
+            content: "";
+        }
+    }
+    .collapse-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+        width: 88px;
+        height: 88px;
+        border: 23px solid white;
+        background-color: $green;
+        border-radius: 50%;
+        transition: 0.2s ease;
+        > svg {
+            transition: 0.2s ease;
+        }
+        &[aria-expanded=true] {
+            > svg {
+                transform: rotate(-180deg);
+                transition: 0.2s ease;
+            }
+        }
+    }
+}
+
+.services-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1.5px solid $violet;
+}
+
+.services-item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1.5px solid $violet;
+    > .row {
+        align-items: center;
+    }
+    .services-item-title {
+        margin-bottom: 0;
+        font-size: 1.35rem;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+}
