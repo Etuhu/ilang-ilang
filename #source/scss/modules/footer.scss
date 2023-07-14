@@ -1,0 +1,100 @@
+.footer-wrapper {
+	padding-top: 10rem;
+	.footer-contacts {
+		position: relative;
+		background-color: $green;
+		padding-top: 9rem;
+		padding-bottom: 4rem;
+		.contacts-info {
+			.basic-title {
+				font-size: 2.5rem;
+				margin-bottom: 0.8rem;
+			}
+			.contacts-info-bottom-row {
+				display: flex;
+				align-items: flex-start;
+				margin-top: 3rem;
+				.contacts-info-phones,
+				.contacts-info-messages {
+					width: 50%;
+					b:not(.basic-button),
+					a:not(.basic-button) {
+						display: block;
+						margin-bottom: 1rem;
+					}
+					a:not(.basic-button) {
+						width: fit-content;
+						color: inherit;
+						border-bottom: 1px solid rgba(255, 255, 255, 0);
+						line-height: 1.5;
+						&:hover {
+							border-bottom: 1px solid $main-font-color;
+						}
+					}
+				}
+				.contacts-info-messages {
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					align-items: flex-start;
+					.basic-button {
+						border: unset;
+						background-color: $violet;
+                        padding: 15px 40px 15px 30px;
+                        font-size: 1rem;
+                        &:hover {
+                            box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.25);
+                            > svg {
+                                transition: 0.2s ease;
+                                > path{
+                                    fill: #00a900;
+                                    transition: 0.2s ease;
+                                }
+                            }
+                        }
+						> svg {
+							margin-right: 25px;
+                            transition: 0.2s ease;
+                            > path{
+                                transition: 0.2s ease;
+                            }
+						}
+					}
+				}
+			}
+		}
+		.contacts-map {
+			position: absolute !important;
+			bottom: 0;
+			right: 0;
+			margin-left: auto;
+			.leaflet-tile-pane {
+				filter: grayscale(1);
+			}
+		}
+	}
+    .footer-bottom-row {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .attention {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+		.dev {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            a img {
+                transition: 0.5s ease;
+                &:hover {
+                    transition: 0.5s ease;
+                    transform: rotate(360deg);
+                }
+				@media (max-width: 1199px) {
+					width: 30px;
+					height: 30px;
+				}
+            }
+		}
+    }
+}

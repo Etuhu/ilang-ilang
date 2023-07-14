@@ -87,6 +87,8 @@ indexSliderParams.navigation.prevEl = '.index-staff-swiper-button-prev';
 new Swiper(".index-staff-swiper", indexSliderParams);
 
 //Заменяем параметры для слайдера со статьями на главной и инициализируем слайдер
+indexSliderParams.navigation.nextEl = '.index-articles-swiper-button-next';
+indexSliderParams.navigation.prevEl = '.index-articles-swiper-button-prev';
 new Swiper(".index-articles-swiper", indexSliderParams);
 
 //Карта 2GIS на главной
@@ -95,7 +97,7 @@ let map = document.getElementById("map");
 if (map) {
     DG.then(function () {
         map = DG.map("map", {
-            center: [55.342880, 86.094094],
+            center: [55.342937, 86.094272],
             zoom: 17,
         });
         mapicon = DG.icon({
@@ -105,6 +107,6 @@ if (map) {
             className: "map-icon",
             iconSize: [38, 60] /* Размер иконки */,
         });
-        DG.marker([55.342880, 86.094094], { icon: mapicon }).addTo(map); /* Координаты маркера */
+        DG.marker([55.342937, 86.094272], { icon: mapicon }).addTo(map); /* Координаты маркера */
     });
 }

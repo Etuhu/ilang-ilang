@@ -1,5 +1,5 @@
 .index-services {
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     .title-wrapper {
         margin-bottom: 2.5rem;
     }
@@ -57,6 +57,7 @@
         }
     }
     .collapse-button {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -71,10 +72,32 @@
         > svg {
             transition: 0.2s ease;
         }
+        &:hover {
+            background-color: rgb(200, 219, 191);
+            &::after {
+                color: rgb(200, 219, 191);
+            }
+        }
+        &::after {
+            content: "Смотреть больше";
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -50px;
+            width: max-content;
+            font-size: 0.95rem;
+            line-height: 1.2;
+            border-bottom: 1px solid $green;
+            color: $green;
+        }
         &[aria-expanded=true] {
             > svg {
                 transform: rotate(-180deg);
                 transition: 0.2s ease;
+            }
+            &::after {
+                content: "Свернуть";
             }
         }
     }
@@ -85,6 +108,10 @@
     margin: 0;
     padding: 0;
     border-top: 1.5px solid $violet;
+}
+
+.collapse > .services-list {
+    border-top: unset;
 }
 
 .services-item {
