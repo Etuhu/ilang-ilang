@@ -68,9 +68,16 @@ let indexSliderParams = {
 		  spaceBetween: 20
 		},
 		1600: {
+		  slidesPerView: 4,
+		  slidesPerGroup: 1,
+		  spaceBetween: 40,
+		  slidesOffsetBefore: 600
+		},
+		1921: {
 		  slidesPerView: 4.2,
 		  slidesPerGroup: 1,
 		  spaceBetween: 60,
+		  slidesOffsetBefore: 900
 		}
 	}
 };

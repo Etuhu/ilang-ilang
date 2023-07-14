@@ -53,6 +53,10 @@
             font-weight: 600;
             line-height: 1.2;
             margin-bottom: 1.15rem;
+            @media (max-width: 1920px) {
+                font-size: 1.15rem;
+                margin-bottom: 1rem;
+            }
         }
         .actions-item-preview {
             margin-top: auto;
