@@ -30,6 +30,9 @@
     .actions-item-image {
         margin-bottom: 1.15rem;
         position: relative;
+        @media (max-width: 1920px) {
+            margin-bottom: 1rem;
+        }
         &::after {
             position: absolute;
             top: 0;

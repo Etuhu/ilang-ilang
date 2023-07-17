@@ -1,19 +1,46 @@
 .footer-wrapper {
 	padding-top: 10rem;
+	@media (max-width: 1499px) {
+		padding-top: 7rem;
+	}
+	@media (max-width: 767px) {
+		padding-top: 0;
+	}
 	.footer-contacts {
 		position: relative;
 		background-color: $green;
 		padding-top: 9rem;
 		padding-bottom: 4rem;
+		@media (max-width: 1699px) {
+			padding-top: 6rem;
+			padding-bottom: 3rem;
+		}
+		@media (max-width: 1199px) {
+			padding-top: 4rem;
+		}
+		@media (max-width: 767px) {
+			padding-top: 0;
+			display: flex;
+			flex-direction: column-reverse;
+		}
 		.contacts-info {
 			.basic-title {
 				font-size: 2.5rem;
 				margin-bottom: 0.8rem;
+				@media (max-width: 1199px) {
+					font-size: 2.2rem;
+				}
+				@media (max-width: 991px) {
+					font-size: 1.7rem;
+				}
 			}
 			.contacts-info-bottom-row {
 				display: flex;
 				align-items: flex-start;
 				margin-top: 3rem;
+				@media (max-width: 1199px) {
+					margin-top: 2rem;
+				}
 				.contacts-info-phones,
 				.contacts-info-messages {
 					width: 50%;
@@ -21,6 +48,9 @@
 					a:not(.basic-button) {
 						display: block;
 						margin-bottom: 1rem;
+						@media (max-width: 1699px) {
+							margin-bottom: 0.7rem;
+						}
 					}
 					a:not(.basic-button) {
 						width: fit-content;
@@ -42,6 +72,18 @@
 						background-color: $violet;
                         padding: 15px 40px 15px 30px;
                         font-size: 1rem;
+						@media (max-width: 1699px) {
+							padding: 12px 30px 12px 20px;
+						}
+						@media (max-width: 1499px) {
+							padding: 10px 20px 10px 20px;
+						}
+						@media (max-width: 1199px) {
+							padding: 7px 15px 7px 15px;
+						}
+						@media (max-width: 991px) {
+							padding: 5px 10px 5px 10px;
+						}
                         &:hover {
                             box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.25);
                             > svg {
@@ -55,6 +97,25 @@
 						> svg {
 							margin-right: 25px;
                             transition: 0.2s ease;
+							@media (max-width: 1699px) {
+								width: 35px;
+								height: 35px;
+							}
+							@media (max-width: 1499px) {
+								width: 30px;
+								height: 30px;
+								margin-right: 20px;
+							}
+							@media (max-width: 1199px) {
+								width: 27px;
+								height: 27px;
+								margin-right: 13px;
+							}
+							@media (max-width: 991px) {
+								width: 22px;
+								height: 22px;
+								margin-right: 10px;
+							}
                             > path{
                                 transition: 0.2s ease;
                             }
@@ -68,6 +129,31 @@
 			bottom: 0;
 			right: 0;
 			margin-left: auto;
+			@media (max-width: 1920px) {
+				width: 800px !important;
+				height: 900px !important;
+			}
+			@media (max-width: 1699px) {
+				width: 700px !important;
+				height: 700px !important;
+			}
+			@media (max-width: 1499px) {
+				width: 550px !important;
+    			height: 600px !important;
+			}
+			@media (max-width: 1199px) {
+				width: 430px !important;
+    			height: 470px !important;
+			}
+			@media (max-width: 991px) {
+				width: 380px !important;
+    			height: 380px !important;
+			}
+			@media (max-width: 767px) {
+				position: relative !important;
+				width: 100% !important;
+				margin-bottom: 3rem;
+			}
 			.leaflet-tile-pane {
 				filter: grayscale(1);
 			}
@@ -76,9 +162,22 @@
     .footer-bottom-row {
         padding-top: 40px;
         padding-bottom: 40px;
+		@media (max-width: 1499px) {
+			padding-top: 30px;
+			padding-bottom: 20px;
+		}
         .attention {
             text-transform: uppercase;
             font-size: 1.2rem;
+			line-height: 1.2;
+			display: flex;
+			align-items: center;
+			@media (max-width: 991px) {
+				font-size: 1rem;
+			}
+			@media (max-width: 767px) {
+				font-size: 0.9rem;
+			}
         }
 		.dev {
             display: flex;
@@ -93,6 +192,10 @@
 				@media (max-width: 1199px) {
 					width: 30px;
 					height: 30px;
+				}
+				@media (max-width: 767px) {
+					width: 25px;
+					height: 25px;
 				}
             }
 		}

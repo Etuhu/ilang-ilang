@@ -1,5 +1,11 @@
 .index-staff {
     padding-top: 5rem;
+    @media (max-width: 1920px) {
+        padding-top: 3rem;
+    }
+    @media (max-width: 1199px) {
+        padding-top: 2rem;
+    }
     .index-staff-swiper {
         margin-top: 3rem;
     }
@@ -56,12 +62,20 @@
             line-height: 1.4;
             padding: 0.85rem 0;
             margin-bottom: 0;
+            @media (max-width: 1920px) {
+                font-size: 1.3rem;
+                line-height: 1.2;
+                padding: 0.65rem 0;
+            }
         }
         .staff-item-post {
             line-height: 1.5;
             padding: 0.85rem 0;
             margin-top: auto;
             border-top: 1.5px solid $violet;
+            @media (max-width: 1920px) {
+                padding: 0.65rem 0;
+            }
         }
     }
 }

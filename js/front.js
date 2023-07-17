@@ -29,7 +29,7 @@ const promoSwiper = new Swiper(".promo-swiper", {
 
 //Параметры для типового слайдера на главной
 let indexSliderParams = {
-	slidesPerView: 2.7,
+	slidesPerView: 4.2,
 	slidesPerGroup: 1,
 	speed: 500,
 	grabCursor: false,
@@ -45,29 +45,46 @@ let indexSliderParams = {
 	navigation: {},
 	pagination: {},
 	breakpoints: {
-		320: {
+		300: {
           slidesPerView: 1.5,
 		  slidesPerGroup: 1,
-		  spaceBetween: 10
+		  spaceBetween: 20,
+		  slidesOffsetBefore: 10
 		},
 		400: {
-          slidesPerView: 1.8,
-		  spaceBetween: 10
+          slidesPerView: 2.7,
+		  slidesPerGroup: 1,
+		  spaceBetween: 20,
+		  slidesOffsetBefore: 10
 		},
 		576: {
-		  slidesPerView: 2,
-		  spaceBetween: 10
+			slidesPerView: 3.3,
+			spaceBetween: 15,
+			slidesOffsetBefore: 200
 		},
 		768: {
-		  slidesPerView: 2,
-		  spaceBetween: 15
+		  slidesPerView: 3.5,
+		  spaceBetween: 15,
+		  slidesOffsetBefore: 250
 		},
 		992: {
-          slidesPerView: 3,
-		  slidesPerGroup: 1,
-		  spaceBetween: 20
+		  slidesPerView: 3.6,
+		  spaceBetween: 15,
+		  slidesOffsetBefore: 300
 		},
-		1600: {
+		1200: {
+          slidesPerView: 3.7,
+		  slidesPerGroup: 1,
+		  spaceBetween: 30,
+		  slidesOffsetBefore: 300
+		},
+		1400: {
+		  slidesPerView: 4,
+		  slidesPerGroup: 1,
+		  spaceBetween: 40,
+		  slidesOffsetBefore: 400
+		},
+		1700: {
 		  slidesPerView: 4,
 		  slidesPerGroup: 1,
 		  spaceBetween: 40,
@@ -88,7 +105,15 @@ indexSliderParams.navigation.prevEl = '.index-actions-swiper-button-prev';
 new Swiper(".index-actions-swiper", indexSliderParams);
 
 //Заменяем параметры для слайдера со специалистами на главной и инициализируем слайдер
-indexSliderParams.breakpoints[1600].slidesPerView = 3.5;
+indexSliderParams.breakpoints[300].slidesPerView = 2.5;
+indexSliderParams.breakpoints[400].slidesPerView = 1.8;
+indexSliderParams.breakpoints[576].slidesPerView = 3.3;
+indexSliderParams.breakpoints[768].slidesPerView = 3;
+indexSliderParams.breakpoints[992].slidesPerView = 3;
+indexSliderParams.breakpoints[1200].slidesPerView = 3;
+indexSliderParams.breakpoints[1400].slidesPerView = 3.2;
+indexSliderParams.breakpoints[1700].slidesPerView = 3.5;
+indexSliderParams.breakpoints[1921].slidesPerView = 3.6;
 indexSliderParams.navigation.nextEl = '.index-staff-swiper-button-next';
 indexSliderParams.navigation.prevEl = '.index-staff-swiper-button-prev';
 new Swiper(".index-staff-swiper", indexSliderParams);

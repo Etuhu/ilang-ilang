@@ -7,9 +7,35 @@
     @media (max-width: 1920px) {
         height: 300px;
     }
+    @media (max-width: 1499px) {
+        height: 210px;
+    }
+    @media (max-width: 1399px) {
+        height: 160px;
+    }
+    @media (max-width: 767px) {
+        background-color: #382D27;
+        height: auto;
+    }
     .header-wrapper {
         padding-top: 35px;
         padding-bottom: 35px;
+        @media (max-width: 1199px) {
+            position: relative;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        @media (max-width: 767px) {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            padding-top: 40px;
+            padding-bottom: 0;
+        }
+    }
+    .logo-wrapper {
+        @media (max-width: 767px) {
+            padding-bottom: 20px;
+        }
     }
     .top-menu-wrapper {
         display: flex;
@@ -18,12 +44,19 @@
             display: flex;
             align-items: flex-end;
             flex-direction: column;
+            @media (max-width: 767px) {
+                position: absolute;
+                top: 10px;
+                right: calc(var(--bs-gutter-x) * .5);;
+            }
             .phones {
                 display: flex;
-
                 color: #E5E5E5;
                 font-size: 1.15rem;
                 font-weight: 700;
+                @media (max-width: 1920px) {
+                    font-size: 1.05rem;
+                }
                 a {
                     color: inherit;
                     transition: 0.2s ease;
@@ -47,9 +80,30 @@
             padding-top: 0;
             padding-bottom: 0;
             margin-top: auto;
+            @media (max-width: 991px) {
+                margin-top: 5px;
+            }
+            @media (max-width: 767px) {
+                margin-top: 0;
+            }
             .menu-item {
                 &:not(:last-child) {
                     margin-right: 20px;
+                    @media (max-width: 1899px) {
+                        margin-right: 15px;
+                    }
+                    @media (max-width: 1599px) {
+                        margin-right: 10px;
+                    }
+                    @media (max-width: 1399px) {
+                        margin-right: 12px;
+                    }
+                    @media (max-width: 991px) {
+                        margin-right: 10px;
+                    }
+                    @media (max-width: 767px) {
+                        margin-bottom: 15px;
+                    }
                 }
                 a {
                     display: inline-block;
@@ -63,11 +117,55 @@
                     @media (max-width: 2299px) {
                         font-size: 0.8rem;
                     }
+                    @media (max-width: 1899px) {
+                        font-size: 0.7rem;
+                    }
+                    @media (max-width: 1699px) {
+                        font-size: 0.8rem;
+                    }
+                    @media (max-width: 1599px) {
+                        font-size: 0.7rem;
+                    }
+                    @media (max-width: 1399px) {
+                        font-size: 0.65rem;
+                        padding: 5px 10px;
+                    }
+                    @media (max-width: 1199px) {
+                        font-size: 0.8rem;
+                    }
+                    @media (max-width: 991px) {
+                        font-size: 0.65rem;
+                    }
+                    @media (max-width: 767px) {
+                        font-size: 1.1rem;
+                        padding: 0;
+                        background-color: unset;
+                        color: $yellow;
+                        line-height: 1;
+                        font-weight: 600;
+                    }
                     &:hover {
                         background-color: $violet;
                         transition: 0.2s ease;
+                        @media (max-width: 767px) {
+                            background-color: unset;
+                            text-shadow: 0 0 5px $yellow;
+
+                        }
                     }
                 }
+            }
+            .navbar-nav {
+                flex-wrap: wrap;
+                @media (max-width: 767px) {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        .navbar-collapse {
+            @media (max-width: 767px) {
+                border-top: 1px solid $yellow;
             }
         }
     }
@@ -83,4 +181,80 @@
     left: 0;
     width: 100%;
     z-index: 100;
+    @media (max-width: 767px) {
+        position: relative;
+    }
+}
+
+
+.navbar-toggler-wrapper {
+    display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.navbar-toggler {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    &:focus {
+        box-shadow: unset;
+    }
+    .navbar-toggler-icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $yellow;
+        border-radius: 1px;
+        transition: 0.05s ease;
+    }
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $yellow;
+        content: "";
+        border-radius: 1px;
+        transition: 0.35s ease;
+    }
+    .navbar-toggler-icon::before {
+            top: -8px;
+    }
+
+    .navbar-toggler-icon::after {
+            bottom: -8px;
+    }
+    &[aria-expanded=true] {
+        @media (max-width: 991px) {
+            overflow-y: auto;
+        }
+        .navbar-toggler-icon {
+            background-color: rgba(255, 255, 255, 0);
+            transition: 0.05s ease;
+        }
+        .navbar-toggler-icon::before {
+            top: 0;
+            -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+            transition: 0.35s ease;
+        }
+        .navbar-toggler-icon::after {
+            top: 0;
+            -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+            transition: 0.35s ease;
+        }
+    }
 }
