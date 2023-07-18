@@ -100,9 +100,9 @@ let indexSliderParams = {
 };
 
 //Заменяем параметры для слайдера с акциями на главной и инициализируем слайдер
-indexSliderParams.navigation.nextEl = '.index-actions-swiper-button-next';
-indexSliderParams.navigation.prevEl = '.index-actions-swiper-button-prev';
-new Swiper(".index-actions-swiper", indexSliderParams);
+indexSliderParams.navigation.nextEl = '.actions-swiper-button-next';
+indexSliderParams.navigation.prevEl = '.actions-swiper-button-prev';
+new Swiper(".actions-swiper", indexSliderParams);
 
 //Заменяем параметры для слайдера со специалистами на главной и инициализируем слайдер
 indexSliderParams.breakpoints[300].slidesPerView = 1.3;
