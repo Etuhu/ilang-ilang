@@ -1,5 +1,8 @@
 .index-news {
     padding-bottom: 3rem;
+    @media (max-width: 575px) {
+        padding-bottom: 2rem;
+    }
     .title-wrapper {
         margin-bottom: 5rem;
         @media (max-width: 1920px) {
@@ -52,9 +55,6 @@
                         @media (max-width: 767px) {
                             margin-bottom: 5px;
                         }
-                        @media (max-width: 575px) {
-                            color: $main-font-color;
-                        }
                     }
                     .title {
                         font-weight: 600;
@@ -64,6 +64,7 @@
                         font-size: 1rem;
                         @media (max-width: 575px) {
                             color: $main-font-color;
+                            font-size: 1.1rem;
                         }
                     }
                 }
@@ -93,13 +94,14 @@
                     }
                     @media (max-width: 575px) {
                         color: $main-font-color;
+                        font-size: 0.8rem;
                     }
                 }
             }
             &[aria-selected=true] {
                 .title-block {
                     flex-shrink: 0;
-                    .date, .title {
+                    .title {
                         color: $main-font-color;
                     }
                 }

@@ -60,9 +60,16 @@
                 font-size: 1.15rem;
                 margin-bottom: 1rem;
             }
+            @media (max-width: 575px) {
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
         }
         .actions-item-preview {
             margin-top: auto;
+            @media (max-width: 575px) {
+                font-size: 0.8rem;
+            }
         }
     }
 }

@@ -166,6 +166,10 @@
 			padding-top: 30px;
 			padding-bottom: 20px;
 		}
+		@media (max-width: 575px) {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
         .attention {
             text-transform: uppercase;
             font-size: 1.2rem;

@@ -48,13 +48,13 @@ let indexSliderParams = {
 		300: {
           slidesPerView: 1.5,
 		  slidesPerGroup: 1,
-		  spaceBetween: 20,
+		  spaceBetween: 10,
 		  slidesOffsetBefore: 10
 		},
-		400: {
-          slidesPerView: 2.7,
+		450: {
+          slidesPerView: 2.4,
 		  slidesPerGroup: 1,
-		  spaceBetween: 20,
+		  spaceBetween: 10,
 		  slidesOffsetBefore: 10
 		},
 		576: {
@@ -105,8 +105,8 @@ indexSliderParams.navigation.prevEl = '.index-actions-swiper-button-prev';
 new Swiper(".index-actions-swiper", indexSliderParams);
 
 //Заменяем параметры для слайдера со специалистами на главной и инициализируем слайдер
-indexSliderParams.breakpoints[300].slidesPerView = 2.5;
-indexSliderParams.breakpoints[400].slidesPerView = 1.8;
+indexSliderParams.breakpoints[300].slidesPerView = 1.3;
+indexSliderParams.breakpoints[450].slidesPerView = 1.8;
 indexSliderParams.breakpoints[576].slidesPerView = 3.3;
 indexSliderParams.breakpoints[768].slidesPerView = 3;
 indexSliderParams.breakpoints[992].slidesPerView = 3;

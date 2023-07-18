@@ -1,12 +1,19 @@
 .index-articles {
     padding-top: 5rem;
+    padding-bottom: 3rem;
     @media (max-width: 1920px) {
         padding-top: 3rem;
     }
+    @media (max-width: 575px) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
     .index-articles-swiper {
         margin-top: 3rem;
+        @media (max-width: 575px) {
+            margin-top: 2rem;
+        }
     }
-    padding-bottom: 3rem;
 }
 
 .articles-item {

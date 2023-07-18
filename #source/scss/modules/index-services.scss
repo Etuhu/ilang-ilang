@@ -5,6 +5,7 @@
     }
     @media (max-width: 575px) {
         padding-top: 3rem;
+        padding-bottom: 90px;
     }
     .title-wrapper {
         margin-bottom: 2.5rem;
@@ -99,8 +100,11 @@
         @media (max-width: 1399px) {
             bottom: -70px;
         }
-        @media (max-width: 575px) {
+        @media (max-width: 599px) {
             bottom: -60px;
+        }
+        @media (max-width: 575px) {
+            bottom: -50px;
         }
         &::before {
             position: absolute;
@@ -159,6 +163,10 @@
             width: 45px;
             height: 45px;
         }
+        @media (max-width: 575px) {
+            width: 40px;
+            height: 40px;
+        }
         > svg {
             transition: 0.2s ease;
             @media (max-width: 1920px) {
@@ -172,6 +180,9 @@
             }
             @media (max-width: 1399px) {
                 width: 15px;
+            }
+            @media (max-width: 575px) {
+                width: 12px;
             }
         }
         &:hover {
@@ -198,6 +209,9 @@
             }
             @media (max-width: 1499px) {
                 bottom: -30px;
+            }
+            @media (max-width: 575px) {
+                font-size: 0.8rem;
             }
         }
         &[aria-expanded=true] {
@@ -248,6 +262,12 @@
         }
         @media (max-width: 575px) {
             margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+    }
+    .services-item-description {
+        @media (max-width: 575px) {
+            font-size: 0.8rem;
         }
     }
     .services-item-links {
@@ -273,6 +293,9 @@
             @media (max-width: 767px) {
                 margin-bottom: 0;
                 margin-right: 20px;
+            }
+            @media (max-width: 575px) {
+                font-size: 0.8rem;
             }
             &:hover {
                 color: $violet;

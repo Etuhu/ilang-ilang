@@ -4,6 +4,10 @@
 	@media (max-width: 1920px) {
 		padding-top: 3rem;
 	}
+	@media (max-width: 575px) {
+		padding-bottom: 2rem;
+		padding-top: 2rem;
+	}
 	.title-wrapper {
 		margin-bottom: 5rem;
 		@media (max-width: 1920px) {
@@ -28,7 +32,12 @@
 }
 
 .cosmetic-item {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
+	@media (max-width: 575px) {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	> .content {
 		position: relative;
 		display: flex;
@@ -41,6 +50,9 @@
 		}
 		@media (max-width: 767px) {
 			padding: 15px 15px 20px;
+		}
+		@media (max-width: 575px) {
+			padding: 15px 30px 30px;
 		}
 		&:hover {
 			background-color: $yellow;
@@ -73,6 +85,10 @@
 			}
 			@media (max-width: 767px) {
 				min-height: 3.5rem;
+			}
+			@media (max-width: 575px) {
+				font-size: 1.2rem;
+				min-height: unset;
 			}
 		}
 		.preview {
