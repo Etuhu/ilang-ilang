@@ -142,3 +142,12 @@ if (map) {
         DG.marker([55.342937, 86.094272], { icon: mapicon }).addTo(map); /* Координаты маркера */
     });
 }
+
+//Сворачиваем меню при клике на один из пунктов
+let collapseMenu = document.querySelector("#sitemenu");
+let navLinks = collapseMenu.querySelectorAll(".menu-item a");
+navLinks.forEach(function(navLink){
+	navLink.addEventListener("click", function () {
+		bootstrap.Collapse.getInstance(collapseMenu).hide();
+	});
+});
