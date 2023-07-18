@@ -107,7 +107,7 @@ new Swiper(".index-actions-swiper", indexSliderParams);
 //Заменяем параметры для слайдера со специалистами на главной и инициализируем слайдер
 indexSliderParams.breakpoints[300].slidesPerView = 1.3;
 indexSliderParams.breakpoints[450].slidesPerView = 1.8;
-indexSliderParams.breakpoints[576].slidesPerView = 3.3;
+indexSliderParams.breakpoints[576].slidesPerView = 2.5;
 indexSliderParams.breakpoints[768].slidesPerView = 3;
 indexSliderParams.breakpoints[992].slidesPerView = 3;
 indexSliderParams.breakpoints[1200].slidesPerView = 3;

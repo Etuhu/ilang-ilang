@@ -1,0 +1,45 @@
+.shadow-block {
+    position: absolute;
+    z-index: -1;
+    > img {
+        width: 100%;
+    }
+}
+
+.shadow--top-left {
+    width: 60%;
+    top: 19%;
+    left: 0;
+    @media (max-width: 991px) {
+        top: 15%;
+    }
+    @media (max-width: 767px) {
+        top: 14%;
+    }
+    @media (max-width: 575px) {
+        width: 80%;
+        top: 28%;
+    }
+}
+
+.shadow--middle-right {
+    width: 49%;
+    top: 45%;
+    right: 0;
+    @media (max-width: 767px) {
+        top: 43%;
+    }
+    @media (max-width: 575px) {
+        width: 65%;
+        top: 40%;
+    }
+}
+
+.shadow--bottom-left {
+    width: 46%;
+    top: 55%;
+    left: 0;
+    @media (max-width: 575px) {
+        display: none;
+    }
+}

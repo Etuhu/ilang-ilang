@@ -108,7 +108,7 @@
         }
         .triangle-wrapper {
             position: absolute;
-            top: -1px;
+            top: -2px;
             right: -1px;
             width: 150px;
             height: 120px;
@@ -122,12 +122,14 @@
                 height: 80px;
             }
             @media (max-width: 1399px) {
-                width: 92px;
+                width: 94px;
                 height: 72px;
+                top: -2px;
+                right: -3px;
             }
             @media (max-width: 767px) {
-                width: 70px;
-                height: 50px;
+                width: 72px;
+                height: 51px;
             }
             .triangle {
                 position: relative;
@@ -147,7 +149,7 @@
                     border-right-width: 92px;
                 }
                 @media (max-width: 767px) {
-                    border-bottom-width: 52px;
+                    border-bottom-width: 51px;
                     border-right-width: 71px;
                 }
                 &::after {
@@ -171,8 +173,10 @@
                         border-right-width: 88px;
                     }
                     @media (max-width: 767px) {
-                        border-bottom-width: 49px;
+                        border-bottom-width: 48px;
                         border-right-width: 67px;
+                        top: 2px;
+                        left: 1px;
                     }
                 }
             }
