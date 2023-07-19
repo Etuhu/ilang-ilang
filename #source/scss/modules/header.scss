@@ -189,6 +189,13 @@
                     }
                 }
             }
+            .current-menu-item {
+                a {
+                    @media (min-width: 768px) {
+                        background-color: $violet;
+                    }
+                }
+            }
             .navbar-nav {
                 flex-wrap: wrap;
                 @media (max-width: 767px) {

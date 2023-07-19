@@ -6,13 +6,19 @@
     @media (max-width: 1199px) {
         padding-top: 2rem;
     }
-    .index-staff-swiper {
-        margin-top: 3rem;
-        @media (max-width: 575px) {
-            margin-top: 2rem;
-        }
-    }
     padding-bottom: 3rem;
+}
+
+.inner-staff {
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.staff-swiper {
+    margin-top: 3rem;
+    @media (max-width: 575px) {
+        margin-top: 2rem;
+    }
 }
 
 .staff-item {

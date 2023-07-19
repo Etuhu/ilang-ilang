@@ -114,9 +114,9 @@ indexSliderParams.breakpoints[1200].slidesPerView = 3;
 indexSliderParams.breakpoints[1400].slidesPerView = 3.2;
 indexSliderParams.breakpoints[1700].slidesPerView = 3.5;
 indexSliderParams.breakpoints[1921].slidesPerView = 3.6;
-indexSliderParams.navigation.nextEl = '.index-staff-swiper-button-next';
-indexSliderParams.navigation.prevEl = '.index-staff-swiper-button-prev';
-new Swiper(".index-staff-swiper", indexSliderParams);
+indexSliderParams.navigation.nextEl = '.staff-swiper-button-next';
+indexSliderParams.navigation.prevEl = '.staff-swiper-button-prev';
+new Swiper(".staff-swiper", indexSliderParams);
 
 //Заменяем параметры для слайдера со статьями на главной и инициализируем слайдер
 indexSliderParams.navigation.nextEl = '.index-articles-swiper-button-next';
