@@ -2538,6 +2538,29 @@ a {
   }
 }
 
+.staff-page .staff-type-title {
+  color: #DCCAE4;
+  margin-bottom: 1.5rem;
+  text-align: right;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+@media (max-width: 575px) {
+  .staff-page .staff-list {
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+}
+.staff-page .staff-item {
+  margin-bottom: 3rem;
+}
+@media (max-width: 575px) {
+  .staff-page .staff-item {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
 .index-news {
   padding-bottom: 3rem;
 }
@@ -3269,9 +3292,9 @@ a {
 }
 @media (max-width: 1699px) {
   .footer-wrapper .footer-contacts .contacts-info .contacts-info-bottom-row .contacts-info-phones b:not(.basic-button),
-  .footer-wrapper .footer-contacts .contacts-info .contacts-info-bottom-row .contacts-info-phones a:not(.basic-button),
-  .footer-wrapper .footer-contacts .contacts-info .contacts-info-bottom-row .contacts-info-messages b:not(.basic-button),
-  .footer-wrapper .footer-contacts .contacts-info .contacts-info-bottom-row .contacts-info-messages a:not(.basic-button) {
+.footer-wrapper .footer-contacts .contacts-info .contacts-info-bottom-row .contacts-info-phones a:not(.basic-button),
+.footer-wrapper .footer-contacts .contacts-info .contacts-info-bottom-row .contacts-info-messages b:not(.basic-button),
+.footer-wrapper .footer-contacts .contacts-info .contacts-info-bottom-row .contacts-info-messages a:not(.basic-button) {
     margin-bottom: 0.7rem;
   }
 }
