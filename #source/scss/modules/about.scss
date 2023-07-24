@@ -1,145 +1,205 @@
+.about {
+	.basic-title {
+		@media (max-width: 991px) {
+			padding-right: 37%;
+		}
+		@media (max-width: 767px) {
+			padding-right: 20%;
+		}
+		@media (max-width: 575px) {
+			padding-right: 0;
+			position: relative;
+			z-index: 1;
+		}
+	}
+	.about-content {
+		position: relative;
+		min-height: 1000px;
+		@media (max-width: 1920px) {
+			min-height: 850px;
+		}
+		@media (max-width: 1699px) {
+			min-height: 750px;
+		}
+		@media (max-width: 1499px) {
+			min-height: 600px;
+		}
+		@media (max-width: 1299px) {
+			min-height: 530px;
+		}
+		@media (max-width: 991px) {
+			min-height: 470px;
+		}
+		@media (max-width: 767px) {
+			min-height: 400px;
+		}
+		@media (max-width: 575px) {
+			min-height: unset;
+			display: flex;
+			flex-direction: column-reverse;
+			margin-top: 1.5rem;
+		}
+	}
+	.about-image-row {
+		@media (min-width: 576px) {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: 0;
+			z-index: 10;
+		}
+		.about-image {
+			@media (max-width: 575px) {
+				text-align: center;
+			}
+			img {
+				width: 550px;
+				@media (max-width: 575px) {
+					width: 60%;
+				}
+				@media (max-width: 399px) {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.about-description {
+		> p.color-paragraph {
+			background-color: $yellow;
+			font-size: 1.75rem;
+			font-weight: 500;
+			padding: 60px 60px 60px 500px;
+			margin-top: -35px;
+			@media (max-width: 1920px) {
+				padding: 50px 50px 50px 450px;
+			}
+			@media (max-width: 1699px) {
+				padding: 30px 30px 30px 360px;
+				font-size: 1.6rem;
+			}
+			@media (max-width: 1499px) {
+				padding: 25px 25px 25px 300px;
+				font-size: 1.4rem;
+			}
+			@media (max-width: 1399px) {
+				padding: 20px 20px 20px 280px;
+				font-size: 1.3rem;
+				margin-top: -25px;
+			}
+			@media (max-width: 1299px) {
+				padding: 20px 20px 20px 250px;
+			}
+			@media (max-width: 767px) {
+				padding: 15px 15px 15px 180px;
+				font-size: 1.1rem;
+			}
+			@media (max-width: 575px) {
+				padding-right: calc(var(--bs-gutter-x) * 0.5);
+				padding-left: calc(var(--bs-gutter-x) * 0.5);
+				margin-top: -8rem;
+				padding-top: 8rem;
+				font-size: 1rem;
+			}
+		}
+		> p,
+		h2 {
+			padding-left: 500px;
+			padding-right: 60px;
+			font-size: 1.3rem;
+			margin-bottom: 1.5rem;
+			@media (max-width: 1920px) {
+				padding-left: 450px;
+				padding-right: 50px;
+			}
+			@media (max-width: 1699px) {
+				padding-left: 360px;
+				padding-right: 30px;
+			}
+			@media (max-width: 1499px) {
+				padding-left: 300px;
+				padding-right: 25px;
+			}
+			@media (max-width: 1399px) {
+				padding-left: 280px;
+				padding-right: 20px;
+			}
+			@media (max-width: 1299px) {
+				padding-left: 250px;
+			}
+			@media (max-width: 767px) {
+				padding-left: 180px;
+				padding-right: 15px;
+				font-size: 1.1rem;
+			}
+			@media (max-width: 575px) {
+				padding-right: calc(var(--bs-gutter-x) * 0.5);
+				padding-left: calc(var(--bs-gutter-x) * 0.5);
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
 .about--index {
-    padding-top: 6.5rem;
-    @media (max-width: 1920px) {
-        padding-top: 4.5rem;
-    }
-    .basic-title {
-        @media (max-width: 991px) {
-            padding-right: 37%;
-        }
-        @media (max-width: 767px) {
-            padding-right: 20%;
-        }
-        @media (max-width: 575px) {
-            padding-right: 0;
-            position: relative;
-            z-index: 1;
-        }
-    }
-    .about-content {
-        position: relative;
-        margin-top: 4rem;
-        min-height: 1000px;
-        @media (max-width: 1920px) {
-            min-height: 850px;
-        }
-        @media (max-width: 1699px) {
-            min-height: 750px;
-        }
-        @media (max-width: 1499px) {
-            min-height: 600px;
-        }
-        @media (max-width: 1299px) {
-            min-height: 530px;
-        }
-        @media (max-width: 991px) {
-            min-height: 470px;
-        }
-        @media (max-width: 767px) {
-            min-height: 400px;
-        }
-        @media (max-width: 575px) {
-            min-height: unset;
-            display: flex;
-            flex-direction: column-reverse;
-            margin-top: 1.5rem;
-        }
-    }
-    .about-image-row {
-        @media (min-width: 576px) {
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 0;
-            z-index: 10;
-        }
-        .about-image {
-            @media (max-width: 575px) {
-                text-align: center;
-            }
-            img {
-                width: 550px;
-                @media (max-width: 575px) {
-                    width: 60%;
-                }
-                @media (max-width: 399px) {
-                    width: 100%;
-                }
-            }
-        }
-    }
-    .about-description {
-        > p:first-child {
-            background-color: $yellow;
-            font-size: 1.75rem;
-            font-weight: 500;
-            padding: 60px 60px 60px 500px;
-            margin-top: -35px;
-            @media (max-width: 1920px) {
-                padding: 50px 50px 50px 450px;
-            }
-            @media (max-width: 1699px) {
-                padding: 30px 30px 30px 360px;
-                font-size: 1.6rem;
-            }
-            @media (max-width: 1499px) {
-                padding: 25px 25px 25px 300px;
-                font-size: 1.4rem;
-            }
-            @media (max-width: 1399px) {
-                padding: 20px 20px 20px 280px;
-                font-size: 1.3rem;
-                margin-top: -25px;
-            }
-            @media (max-width: 1299px) {
-                padding: 20px 20px 20px 250px;
-            }
-            @media (max-width: 767px) {
-                padding: 15px 15px 15px 180px;
-                font-size: 1.1rem;
-            }
-            @media (max-width: 575px) {
-                padding-right: calc(var(--bs-gutter-x) * .5);
-                padding-left: calc(var(--bs-gutter-x) * .5);
-                margin-top: -8rem;
-                padding-top: 8rem;
-                font-size: 1rem;
-            }
-        }
-        > p {
-            padding-left: 500px;
-            padding-right: 60px;
-            font-size: 1.3rem;
-            margin-bottom: 1.5rem;
-            @media (max-width: 1920px) {
-                padding-left: 450px;
-                padding-right: 50px;
-            }
-            @media (max-width: 1699px) {
-                padding-left: 360px;
-                padding-right: 30px;
-            }
-            @media (max-width: 1499px) {
-                padding-left: 300px;
-                padding-right: 25px;
-            }
-            @media (max-width: 1399px) {
-                padding-left: 280px;
-                padding-right: 20px;
-            }
-            @media (max-width: 1299px) {
-                padding-left: 250px;
-            }
-            @media (max-width: 767px) {
-                padding-left: 180px;
-                padding-right: 15px;
-                font-size: 1.1rem;
-            }
-            @media (max-width: 575px) {
-                padding-right: calc(var(--bs-gutter-x) * .5);
-                padding-left: calc(var(--bs-gutter-x) * .5);
-                font-size: 1rem;
-            }
-        }
-    }
+	padding-top: 6.5rem;
+	@media (max-width: 1920px) {
+		padding-top: 4.5rem;
+	}
+	.about-content {
+		margin-top: 4rem;
+	}
+}
+
+.about--inner {
+	position: relative;
+	padding-bottom: 3rem;
+	.about-content {
+		margin-top: 2rem;
+		.about-image {
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.about-description {
+		position: absolute;
+		width: 50%;
+		top: 5.5rem;
+		left: 50%;
+		h2 {
+			padding: 0;
+			margin-bottom: 1rem;
+		}
+		.about-description-content {
+			.color-paragraph {
+				background-color: $yellow;
+				margin-top: 2rem;
+				padding: 50px;
+				padding-right: 50%;
+				h2 {
+					font-size: 1.3rem;
+					font-weight: 600;
+					line-height: 1.2;
+				}
+				p:last-child {
+					margin-bottom: 0;
+				}
+			}
+			> p {
+				padding-right: 30%;
+			}
+		}
+	}
+}
+
+.about-page {
+	.about-features {
+		padding-top: 3rem;
+		.about-features-header {
+			.basic-title {
+				font-size: 1.6rem;
+				margin-bottom: 1.5rem;
+			}
+		}
+	}
 }

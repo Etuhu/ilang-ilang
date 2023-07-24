@@ -128,6 +128,13 @@ indexSliderParams.navigation.nextEl = '.works-swiper-button-next';
 indexSliderParams.navigation.prevEl = '.works-swiper-button-prev';
 new Swiper(".works-swiper", indexSliderParams);
 
+//Заменяем параметры для слайдера галереи на странице О клинике
+indexSliderParams.breakpoints[1921].spaceBetween = 45;
+indexSliderParams.breakpoints[1921].slidesOffsetBefore = 980;
+indexSliderParams.navigation.nextEl = '.gallery-swiper-button-next';
+indexSliderParams.navigation.prevEl = '.gallery-swiper-button-prev';
+new Swiper(".gallery-swiper", indexSliderParams);
+
 //Карта 2GIS на главной
 let map = document.getElementById("map");
 

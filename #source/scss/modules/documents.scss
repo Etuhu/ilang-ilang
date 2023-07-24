@@ -1,0 +1,61 @@
+.about-documents {
+    .about-documents-item {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+            @media (max-width: 1920px) {
+                margin-bottom: 40px;
+            }
+            @media (max-width: 1699px) {
+                margin-bottom: 30px;
+            }
+            @media (max-width: 991px) {
+                margin-bottom: 25px;
+            }
+        }
+        .doc-link {
+            display: flex;
+            align-items: center;
+            color: #54544f;
+            position: relative;
+            font-weight: 300;
+            padding-right: 30px;
+            padding-left: 30px;
+            @media (max-width: 1699px) {
+                padding-right: 20px;
+            }
+            @media (max-width: 991px) {
+                padding-left: 0;
+            }
+            // &:hover {
+            //     color: $lightblue;
+            // }
+            &::before {
+                content: "";
+                display: block;
+                width: 67px;
+                height: 67px;
+                margin-right: 23px;
+                flex-shrink: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                @media (max-width: 1920px) {
+                    width: 60px;
+                    height: 60px;
+                    margin-right: 18px;
+                }
+                @media (max-width: 1699px) {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 13px;
+                }
+            }
+            &[href$="pdf"]::before {
+                background-image: url("../img/pdf-icon.svg");
+            }
+            &[href$="doc"]::before,
+            &[href$="docx"]::before {
+                background-image: url("../img/doc-icon.svg");
+            }
+        }
+    }
+}
