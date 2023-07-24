@@ -149,6 +149,13 @@ a {
     margin-top: 0;
 }
 
+.inner-page-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
 .basic-link {
     font-weight: 300;
     font-size: 0.8rem;
@@ -395,6 +402,9 @@ a {
         font-size: 0.7rem;
         a {
             color: $main-font-color;
+            &:hover {
+                color: $violet;
+            }
         }
     }
     .breadcrumb-item + .breadcrumb-item {

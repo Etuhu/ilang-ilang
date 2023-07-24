@@ -111,3 +111,14 @@
         }
     }
 }
+
+.news-item-page {
+    .news-pic {
+        @media (max-width: 767px) {
+            margin-bottom: 1.5rem;
+        }
+        .pic {
+            width: 100%;
+        }
+    }
+}

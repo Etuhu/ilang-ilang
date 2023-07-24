@@ -123,6 +123,11 @@ indexSliderParams.navigation.nextEl = '.index-articles-swiper-button-next';
 indexSliderParams.navigation.prevEl = '.index-articles-swiper-button-prev';
 new Swiper(".index-articles-swiper", indexSliderParams);
 
+//Заменяем параметры для слайдера с работами на странице специалиста
+indexSliderParams.navigation.nextEl = '.works-swiper-button-next';
+indexSliderParams.navigation.prevEl = '.works-swiper-button-prev';
+new Swiper(".works-swiper", indexSliderParams);
+
 //Карта 2GIS на главной
 let map = document.getElementById("map");
 
