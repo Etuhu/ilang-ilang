@@ -129,8 +129,20 @@ indexSliderParams.navigation.prevEl = '.works-swiper-button-prev';
 new Swiper(".works-swiper", indexSliderParams);
 
 //Заменяем параметры для слайдера галереи на странице О клинике
+indexSliderParams.breakpoints[300].slidesPerView = 2.3;
+indexSliderParams.breakpoints[450].slidesPerView = 3;
+indexSliderParams.breakpoints[576].slidesPerView = 3.5;
+indexSliderParams.breakpoints[576].slidesOffsetBefore = 150;
+indexSliderParams.breakpoints[768].slidesPerView = 4.5;
+indexSliderParams.breakpoints[768].slidesOffsetBefore = 200;
+indexSliderParams.breakpoints[992].slidesPerView = 3.8;
+indexSliderParams.breakpoints[1200].slidesPerView = 4.2;
+indexSliderParams.breakpoints[1200].spaceBetween = 25;
+indexSliderParams.breakpoints[1400].slidesPerView = 3.8;
+indexSliderParams.breakpoints[1400].slidesOffsetBefore = 600;
 indexSliderParams.breakpoints[1921].spaceBetween = 45;
 indexSliderParams.breakpoints[1921].slidesOffsetBefore = 980;
+indexSliderParams.breakpoints[1921].slidesPerView = 4.4;
 indexSliderParams.navigation.nextEl = '.gallery-swiper-button-next';
 indexSliderParams.navigation.prevEl = '.gallery-swiper-button-prev';
 new Swiper(".gallery-swiper", indexSliderParams);

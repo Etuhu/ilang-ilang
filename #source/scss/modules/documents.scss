@@ -1,4 +1,13 @@
 .about-documents {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    @media (max-width: 1920px) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .about-documents-list {
+        padding-top: 2rem;
+    }
     .about-documents-item {
         &:not(:last-child) {
             margin-bottom: 50px;
@@ -17,36 +26,31 @@
             align-items: center;
             color: #54544f;
             position: relative;
-            font-weight: 300;
-            padding-right: 30px;
-            padding-left: 30px;
+            font-size: 0.8rem;
             @media (max-width: 1699px) {
                 padding-right: 20px;
             }
-            @media (max-width: 991px) {
-                padding-left: 0;
+            &:hover {
+                color: $green;
             }
-            // &:hover {
-            //     color: $lightblue;
-            // }
             &::before {
                 content: "";
                 display: block;
-                width: 67px;
-                height: 67px;
-                margin-right: 23px;
+                width: 60px;
+                height: 60px;
+                margin-right: 20px;
                 flex-shrink: 0;
                 background-size: cover;
                 background-repeat: no-repeat;
                 @media (max-width: 1920px) {
-                    width: 60px;
-                    height: 60px;
-                    margin-right: 18px;
-                }
-                @media (max-width: 1699px) {
                     width: 50px;
                     height: 50px;
-                    margin-right: 13px;
+                    margin-right: 16px;
+                }
+                @media (max-width: 1699px) {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 12px;
                 }
             }
             &[href$="pdf"]::before {
