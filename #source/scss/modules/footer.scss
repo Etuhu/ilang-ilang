@@ -23,6 +23,24 @@
 			display: flex;
 			flex-direction: column-reverse;
 		}
+		b:not(.basic-button),
+		a:not(.basic-button) {
+			display: block;
+			margin-bottom: 1rem;
+			@media (max-width: 1699px) {
+				margin-bottom: 0.7rem;
+			}
+		}
+		a:not(.basic-button),
+		a:not(.social-item) {
+			width: fit-content;
+			color: inherit;
+			border-bottom: 1px solid rgba(255, 255, 255, 0);
+			line-height: 1.5;
+			&:hover {
+				border-bottom: 1px solid $main-font-color;
+			}
+		}
 		.contacts-info {
 			.basic-title {
 				font-size: 2.5rem;
@@ -34,91 +52,139 @@
 					font-size: 1.7rem;
 				}
 			}
-			.contacts-info-bottom-row {
+			.contacts-info-middle-row {
 				display: flex;
 				align-items: flex-start;
 				margin-top: 3rem;
 				@media (max-width: 1199px) {
 					margin-top: 2rem;
 				}
-				.contacts-info-phones,
-				.contacts-info-messages {
-					width: 50%;
-					b:not(.basic-button),
-					a:not(.basic-button) {
-						display: block;
-						margin-bottom: 1rem;
-						@media (max-width: 1699px) {
-							margin-bottom: 0.7rem;
+			}
+			.contacts-info-phones,
+			.contacts-info-messages,
+			.contacts-social {
+				width: 50%;
+			}
+			.contacts-info-messages {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: flex-start;
+				.basic-button {
+					border: unset;
+					background-color: $violet;
+					padding: 15px 40px 15px 30px;
+					font-size: 1rem;
+					@media (max-width: 1699px) {
+						padding: 12px 30px 12px 20px;
+					}
+					@media (max-width: 1499px) {
+						padding: 10px 20px 10px 20px;
+					}
+					@media (max-width: 1199px) {
+						padding: 7px 15px 7px 15px;
+					}
+					@media (max-width: 991px) {
+						padding: 5px 10px 5px 10px;
+					}
+					&:hover {
+						box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.25);
+						> svg {
+							transition: 0.2s ease;
+							> path{
+								fill: #00a900;
+								transition: 0.2s ease;
+							}
 						}
 					}
-					a:not(.basic-button) {
-						width: fit-content;
-						color: inherit;
-						border-bottom: 1px solid rgba(255, 255, 255, 0);
-						line-height: 1.5;
-						&:hover {
-							border-bottom: 1px solid $main-font-color;
+					> svg {
+						margin-right: 25px;
+						transition: 0.2s ease;
+						@media (max-width: 1699px) {
+							width: 35px;
+							height: 35px;
+						}
+						@media (max-width: 1499px) {
+							width: 30px;
+							height: 30px;
+							margin-right: 20px;
+						}
+						@media (max-width: 1199px) {
+							width: 27px;
+							height: 27px;
+							margin-right: 13px;
+						}
+						@media (max-width: 991px) {
+							width: 22px;
+							height: 22px;
+							margin-right: 10px;
+						}
+						> path{
+							transition: 0.2s ease;
 						}
 					}
 				}
-				.contacts-info-messages {
-					display: flex;
-					flex-direction: column;
-					justify-content: flex-start;
-					align-items: flex-start;
-					.basic-button {
-						border: unset;
-						background-color: $violet;
-                        padding: 15px 40px 15px 30px;
-                        font-size: 1rem;
+			}
+		}
+		.contacts-social {
+			padding-top: 1rem;
+			.social-wrapper {
+				display: flex;
+				flex-wrap: nowrap;
+				align-items: flex-start;
+				.social-item {
+					border-bottom: unset;
+					transition: 0.2s ease;
+					svg {
 						@media (max-width: 1699px) {
-							padding: 12px 30px 12px 20px;
+							width: 40px;
+							height: 40px;
 						}
-						@media (max-width: 1499px) {
-							padding: 10px 20px 10px 20px;
-						}
-						@media (max-width: 1199px) {
-							padding: 7px 15px 7px 15px;
+						@media (max-width: 1399px) {
+							width: 35px;
+							height: 35px;
 						}
 						@media (max-width: 991px) {
-							padding: 5px 10px 5px 10px;
+							width: 30px;
+							height: 30px;
 						}
-                        &:hover {
-                            box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.25);
-                            > svg {
-                                transition: 0.2s ease;
-                                > path{
-                                    fill: #00a900;
-                                    transition: 0.2s ease;
-                                }
-                            }
-                        }
-						> svg {
-							margin-right: 25px;
-                            transition: 0.2s ease;
-							@media (max-width: 1699px) {
-								width: 35px;
-								height: 35px;
-							}
-							@media (max-width: 1499px) {
-								width: 30px;
-								height: 30px;
-								margin-right: 20px;
-							}
-							@media (max-width: 1199px) {
-								width: 27px;
-								height: 27px;
-								margin-right: 13px;
-							}
-							@media (max-width: 991px) {
-								width: 22px;
-								height: 22px;
-								margin-right: 10px;
-							}
-                            > path{
-                                transition: 0.2s ease;
-                            }
+						@media (max-width: 575px) {
+							width: 25px;
+							height: 25px;
+						}
+					}
+				}
+				.social-item:not(:last-child) {
+					margin-right: 20px;
+					@media (max-width: 1399px) {
+						margin-right: 15px;
+					}
+					@media (max-width: 575px) {
+						margin-right: 12px;
+					}
+				}
+				.social-item:hover {
+					border-bottom: unset;
+					transition: 0.2s ease;
+				}
+				.social-item--vk {
+					&:hover {
+						svg {
+							fill: #07f;
+						}
+					}
+				}
+				.social-item--ok {
+					&:hover {
+						svg {
+							fill: #ee8208;
+						}
+					}
+				}
+				.social-item--tg {
+					&:hover {
+						svg {
+							fill: #0088cc;
 						}
 					}
 				}
