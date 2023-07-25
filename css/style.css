@@ -1380,6 +1380,26 @@ a {
   }
 }
 
+.about-page {
+  position: relative;
+}
+.about-page .shadow--top-left {
+  width: 49%;
+  top: 60%;
+  right: 0;
+}
+@media (max-width: 991px) {
+  .about-page .shadow--top-left {
+    top: 53%;
+  }
+}
+@media (max-width: 575px) {
+  .about-page .shadow--top-left {
+    width: 65%;
+    top: 55%;
+  }
+}
+
 .promo-slider .swiper-slide {
   position: relative;
 }

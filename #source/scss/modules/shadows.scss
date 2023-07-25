@@ -43,3 +43,19 @@
         display: none;
     }
 }
+
+.about-page {
+    position: relative;
+	.shadow--top-left {
+        width: 49%;
+        top: 60%;
+        right: 0;
+        @media (max-width: 991px) {
+            top: 53%;
+        }
+        @media (max-width: 575px) {
+            width: 65%;
+            top: 55%;
+        }
+	}
+}
