@@ -52,6 +52,11 @@
                     height: 40px;
                     margin-right: 12px;
                 }
+                @media (max-width: 575px) {
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 10px;
+                }
             }
             &[href$="pdf"]::before {
                 background-image: url("../img/pdf-icon.svg");

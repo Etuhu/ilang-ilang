@@ -129,8 +129,8 @@ indexSliderParams.navigation.prevEl = '.works-swiper-button-prev';
 new Swiper(".works-swiper", indexSliderParams);
 
 //Заменяем параметры для слайдера галереи на странице О клинике
-indexSliderParams.breakpoints[300].slidesPerView = 2.3;
-indexSliderParams.breakpoints[450].slidesPerView = 3;
+indexSliderParams.breakpoints[300].slidesPerView = 2.5;
+indexSliderParams.breakpoints[450].slidesPerView = 3.5;
 indexSliderParams.breakpoints[576].slidesPerView = 3.5;
 indexSliderParams.breakpoints[576].slidesOffsetBefore = 150;
 indexSliderParams.breakpoints[768].slidesPerView = 4.5;

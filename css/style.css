@@ -1879,6 +1879,26 @@ a {
     padding-bottom: 3rem;
   }
 }
+@media (max-width: 767px) {
+  .about--inner {
+    padding-bottom: 6rem;
+  }
+}
+@media (max-width: 699px) {
+  .about--inner {
+    padding-bottom: 10rem;
+  }
+}
+@media (max-width: 599px) {
+  .about--inner {
+    padding-bottom: 15rem;
+  }
+}
+@media (max-width: 575px) {
+  .about--inner {
+    padding-bottom: 1rem;
+  }
+}
 .about--inner .about-content {
   margin-top: 2rem;
 }
@@ -1897,9 +1917,33 @@ a {
     left: 42%;
   }
 }
+@media (max-width: 767px) {
+  .about--inner .about-description {
+    top: 5rem;
+  }
+}
+@media (max-width: 575px) {
+  .about--inner .about-description {
+    position: static;
+    width: 100%;
+    padding-right: 10.5px;
+    padding-left: 10.5px;
+    padding-top: 15px;
+  }
+}
 .about--inner .about-description h2 {
   padding: 0;
   margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .about--inner .about-description .about-description-content {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .about--inner .about-description .about-description-content {
+    padding-left: 0;
+  }
 }
 .about--inner .about-description .about-description-content .color-paragraph {
   background-color: #F3E07F;
@@ -1929,6 +1973,16 @@ a {
 @media (max-width: 991px) {
   .about--inner .about-description .about-description-content .color-paragraph {
     padding: 25px;
+  }
+}
+@media (max-width: 575px) {
+  .about--inner .about-description .about-description-content .color-paragraph {
+    padding: 20px;
+  }
+}
+@media (max-width: 399px) {
+  .about--inner .about-description .about-description-content .color-paragraph {
+    padding: 15px;
   }
 }
 .about--inner .about-description .about-description-content .color-paragraph h2 {
@@ -1964,6 +2018,16 @@ a {
 .about-page .about-features .about-features-header {
   font-size: 0.9rem;
 }
+@media (max-width: 767px) {
+  .about-page .about-features .about-features-header {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 575px) {
+  .about-page .about-features .about-features-header {
+    font-size: 1rem;
+  }
+}
 .about-page .about-features .about-features-header .basic-title {
   margin-bottom: 1.5rem;
 }
@@ -1990,12 +2054,33 @@ a {
     margin-bottom: 15px;
   }
 }
+@media (max-width: 767px) {
+  .about-page .about-features .about-features-item .title {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .about-page .about-features .about-features-item .title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+}
 .about-page .about-features .about-features-item .text {
   font-size: 0.9rem;
+}
+@media (max-width: 575px) {
+  .about-page .about-features .about-features-item .text {
+    font-size: 1rem;
+  }
 }
 .about-page .about-gallery {
   padding-top: 2rem;
   padding-bottom: 3rem;
+}
+@media (max-width: 575px) {
+  .about-page .about-gallery .title-wrapper {
+    margin-bottom: 2rem;
+  }
 }
 .about-page .about-gallery .gallery-swiper {
   margin-top: 3rem;
@@ -2037,6 +2122,11 @@ a {
 .about-page .vacancies .vacancy-item {
   margin-bottom: 2rem;
 }
+@media (max-width: 575px) {
+  .about-page .vacancies .vacancy-item {
+    margin-bottom: 1rem;
+  }
+}
 .about-page .vacancies .vacancy-item > .content {
   border-radius: 12px;
   border: 1px solid #B4D6A4;
@@ -2053,6 +2143,11 @@ a {
 @media (max-width: 1299px) {
   .about-page .vacancies .vacancy-item > .content {
     padding: 25px;
+  }
+}
+@media (max-width: 575px) {
+  .about-page .vacancies .vacancy-item > .content {
+    padding: 20px;
   }
 }
 .about-page .vacancies .vacancy-item .vacancy-title {
@@ -3956,6 +4051,13 @@ a {
     width: 40px;
     height: 40px;
     margin-right: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .about-documents .about-documents-item .doc-link::before {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
   }
 }
 .about-documents .about-documents-item .doc-link[href$=pdf]::before {
