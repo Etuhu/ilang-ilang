@@ -1,0 +1,40 @@
+.lostpage {
+    padding-bottom: 0;
+    background-color: $vanil;
+    + .footer-wrapper {
+        background-color: $vanil;
+    }
+    .lostpage-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 8rem;
+        padding-bottom: 3rem;
+        @media (max-width: 991px) {
+            padding-top: 13rem;
+            padding-bottom: 5rem;
+        }
+        @media (max-width: 767px) {
+            padding-top: 5rem;
+        }
+        .basic-title {
+            font-size: 8rem;
+            margin-bottom: 1rem;
+            @media (max-width: 991px) {
+                font-size: 7rem;
+            }
+            @media (max-width: 575px) {
+                font-size: 6rem;
+            }
+        }
+        .basic-button {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.footer-wrapper .footer-bottom-row {
+    background-color: white;
+}

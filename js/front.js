@@ -147,6 +147,84 @@ indexSliderParams.navigation.nextEl = '.gallery-swiper-button-next';
 indexSliderParams.navigation.prevEl = '.gallery-swiper-button-prev';
 new Swiper(".gallery-swiper", indexSliderParams);
 
+//Параметры для слайдера с фотографиями зала
+let yogaSliderParams = {
+	slidesPerView: 1.7,
+	slidesPerGroup: 1,
+	speed: 500,
+	grabCursor: false,
+	simulateTouch: true,
+	spaceBetween: 40,
+    slidesOffsetBefore: 900,
+	watchOverflow: true,
+	touchReleaseOnEdges: true,
+	freeMode: {
+		enabled: true,
+		sticky: true,
+	},
+	navigation: {
+        nextEl: ".yoga-swiper-button-next",
+        prevEl: ".yoga-swiper-button-prev",
+	},
+	pagination: {},
+	breakpoints: {
+		300: {
+          slidesPerView: 1.3,
+		  slidesPerGroup: 1,
+		  spaceBetween: 10,
+		  slidesOffsetBefore: 10
+		},
+		450: {
+          slidesPerView: 1.5,
+		  slidesPerGroup: 1,
+		  spaceBetween: 10,
+		  slidesOffsetBefore: 10
+		},
+		576: {
+			slidesPerView: 1.8,
+			spaceBetween: 15,
+			slidesOffsetBefore: 200
+		},
+		768: {
+		  slidesPerView: 2,
+		  spaceBetween: 15,
+		  slidesOffsetBefore: 250
+		},
+		992: {
+		  slidesPerView: 2.1,
+		  spaceBetween: 15,
+		  slidesOffsetBefore: 300
+		},
+		1200: {
+          slidesPerView: 2.3,
+		  slidesPerGroup: 1,
+		  spaceBetween: 30,
+		  slidesOffsetBefore: 300
+		},
+		1400: {
+		  slidesPerView: 2,
+		  slidesPerGroup: 1,
+		  spaceBetween: 30,
+		  slidesOffsetBefore: 400
+		},
+		1700: {
+		  slidesPerView: 2.2,
+		  slidesPerGroup: 1,
+		  spaceBetween: 40,
+		  slidesOffsetBefore: 600
+		},
+		1921: {
+		  slidesPerView: 2.5,
+		  slidesPerGroup: 1,
+		  spaceBetween: 40,
+		  slidesOffsetBefore: 900,
+		}
+	}
+};
+
+//Заменяем параметры для слайдера с фотографиями зала
+new Swiper(".yoga-swiper", yogaSliderParams);
+
 //Карта 2GIS на главной
 let map = document.getElementById("map");
 
